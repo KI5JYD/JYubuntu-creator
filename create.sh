@@ -46,6 +46,7 @@ echo "PRESS CONTROL+C."
 sleep 10
 echo
 echo "We are continuing."
+sleep 4
 # Now the magic begins.
 clear
 echo "Creating environment variables..."
