@@ -12,7 +12,7 @@
 
 # Check if this shit's running as root
 if [[ $EUID -ne 0 ]]; then
-   echo "This shit must be run as root."
+   echo "This must be run as root."
    echo "Please run again with"
    echo "sudo $0" 
    echo
@@ -28,7 +28,7 @@ echo "This script is based upon the directions at"
 echo "https://help.ubuntu.com/community/MakeALiveCD/DVD/BootableFlashFromHarddiskInstall"
 echo "With some necessary modifications."
 echo 
-echo "I believe in the KISS (Keep It Simple, Shithead) philosophy. This creator is pretty straightforward and automatic."
+echo "I believe in the KISS (Keep It Simple, Stupid) philosophy. This creator is pretty straightforward and automatic."
 echo "No questions will be asked. It is assumed that /etc/skel is set up properly and other directories."
 echo
 echo "When you are ready, please close ALL open applications, unmount any other drives,"
@@ -40,7 +40,7 @@ echo "We are going to continue!!!"
 echo 
 echo "This script will continue in 10 seconds."
 echo "This is your last chance to back out. If you wish to continue,"
-echo "Just sit back and enjoy it. Go smoke a blunt. Go fuck your JY doll."
+echo "Just sit back and enjoy it. Go do something else."
 echo "But if you need to cancel NOW..."
 echo "PRESS CONTROL+C."
 sleep 10
@@ -62,7 +62,7 @@ mkdir -p ${CD}/{${FS_DIR},boot/grub} ${WORK}/rootfs
 #apt-get -y install grub-pc xorriso squashfs-tools
 sleep 2
 echo "Now copying your installed system to the temp area."
-echo "This shit WILL take a while, so fuck off."
+echo "This WILL take a while."
 sleep 5
 rsync -av --one-file-system --exclude=/proc/* --exclude=/dev/* \
 --exclude=/sys/* --exclude=/tmp/* --exclude=/home/* --exclude=/lost+found \
@@ -145,7 +145,7 @@ grub-mkrescue -o ~/JYubuntu_amd64.iso ${CD}
 sleep 1
 clear
 echo "We are done!!!!!!"
-echo "To make sure that this shit works, run it in VirtualBox or your"
+echo "To make sure that this works, run it in VirtualBox or your"
 echo "preferred VM environment before committing to release."
 echo 
 echo "Thanks for your time and patience."
