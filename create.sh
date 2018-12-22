@@ -10,7 +10,7 @@
 # Licensed under GNU GPL 3 and CC BY 4.0
 # Some rights reserved.
 
-# Check if this shit's running as root
+# Check if this is running as root
 if [[ $EUID -ne 0 ]]; then
    echo "This must be run as root."
    echo "Please run again with"
