@@ -33,7 +33,7 @@ do
         cat /dev/null | tee $file
 done
 sleep 1
-echo "Shitcanning the unneeded network shit..."
+echo "Deleting the unneeded network stuff for live environment..."
 echo "(mostly the files /etc/hostname and /etc/resolv.conf)"
 rm /etc/resolv.conf /etc/hostname
 sleep 1
